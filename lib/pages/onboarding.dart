@@ -13,7 +13,7 @@ class OnboardingPage extends StatelessWidget {
           children: [
             SizedBox(height:40.0,),
             Image.asset("images/green.jpg"),
-            SizedBox(height:30.0,),
+            SizedBox(height:40.0,),
             Padding(
               padding: const EdgeInsets.only(left: 20.0, right: 10.0),
               child: Text("Recycle Your Waste Products !", style: AppWidget.healinetextstyle(30.0),),
@@ -24,11 +24,15 @@ class OnboardingPage extends StatelessWidget {
               child: Text("Easily collect household waste and generate less waste", style: AppWidget.normaltextstyle(15.0),),
             ),
             SizedBox(height: 50.0,),
-            Container(
-              height: 50,
-              width: MediaQuery.of(context).size.width/1.5,
-              decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(30)),
-              child: Center(child: Text("Get Started", style: AppWidget.whitetextstyle(25.0),)),
+            Material(
+              elevation: 3.0,
+              borderRadius: BorderRadius.circular(30),
+              child: Container(
+                height: 50,
+                width: MediaQuery.of(context).size.width/1.5,
+                decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(30)),
+                child: Center(child: Text("Get Started", style: AppWidget.whitetextstyle(25.0),)),
+              ),
             )
           ],
         ),),

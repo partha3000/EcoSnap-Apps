@@ -1,3 +1,4 @@
+import 'package:ecosnap/pages/home.dart';
 import 'package:ecosnap/pages/onboarding.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const OnboardingPage()
+      home: const HomePage()
     );
   }
 }
