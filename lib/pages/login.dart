@@ -29,20 +29,26 @@ class _LogInState extends State<LogIn> {
               SizedBox(height: 35.0,),
               Container(
                 margin: EdgeInsets.only(left: 20.0, right: 20.0),
-                height: 60,
-                decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(30)),
-                child: Row(
-                  children: [
-                    Container(
-                      padding: EdgeInsets.all(10),
-                      decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(60)),
-                      child: Image.asset("images/google.png", height: 40, width: 40, fit: BoxFit.cover,),),
-                    SizedBox(width: 15.0,),
-                    Text("Sing in with Google", style: AppWidget.whitetextstyle(20.0),),
-                  ],
+                child: Material(
+                  elevation: 4.0,
+                  child: Container(
+                    padding: EdgeInsets.only(left: 20),
+                    height: 60,
+                    decoration: BoxDecoration(color: Colors.green, borderRadius: BorderRadius.circular(20)),
+                    child: Row(
+                      children: [
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(60)),
+                          child: Image.asset("images/google.png", height: 35, width: 35, fit: BoxFit.cover,),),
+                        SizedBox(width: 15.0,),
+                        Text("Sing in with Google", style: AppWidget.whitetextstyle(20.0),),
+                      ],
+                    ),
+                  ),
                 ),
               ),
-              SizedBox(height: 40.0,),
+              SizedBox(height: 50.0,),
             ],
           ),
         ),
